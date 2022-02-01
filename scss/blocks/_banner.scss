@@ -1,0 +1,35 @@
+.banner {
+  padding-bottom: 61px;
+  padding-top: 219px;
+  text-align: center;
+
+  &__title {
+    font-family: $body-font-family;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96.52px;
+    color: $color-header;
+    letter-spacing: 8.2px;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: $tablet-max) {
+      font-size: 58px;
+      line-height: 77.52px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $body-font-family;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 5.4px;
+    color: $color-header;
+    padding-bottom: 250px;
+
+    @media screen and (max-width: $tablet-max) {
+      padding-bottom: 138px;
+    }
+  }
+}
+

@@ -1,0 +1,139 @@
+.projects {
+  padding-top: 117px;
+  padding-bottom: 74px;
+
+  &__title {
+    padding: 13px;
+    font-weight: 700;
+    font-family: $body-font-family;
+    font-size: 44px;
+    line-height: 53.64px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.project {
+  padding-top: 133px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  flex-flow: row nowrap;
+
+  @media screen and (max-width: $desktop-min) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  &__images-two {
+    box-shadow: 261px -56px 0 #7e5aff;
+
+    @media screen and (max-width: $tablet-max) {
+      box-shadow: none;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &__images {
+
+    @media screen and (max-width: $desktop-min) {
+      order: -1;
+    }
+  }
+
+  &__images-one {
+    display: block;
+    position: relative;
+    box-shadow: -261px -56px 0 #55b7ff;
+
+    @media screen and (max-width: $tablet-max) {
+      box-shadow: none;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &__text {
+    padding-left: 70px;
+    padding-top: 96px;
+
+    @media screen and (max-width: $desktop-min) {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      border: 5px solid $color-default;
+      margin-top: 30px;
+    }
+
+    &--padding {
+      padding-left: 0;
+
+      @media screen and (max-width: $desktop-min) {
+        padding-left: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__content {
+
+    &-subtitle {
+      font-family: $body-font-family;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 27.82px;
+      text-transform: uppercase;
+    }
+
+    &-title {
+      font-family: $body-font-family;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 48.64px;
+      padding-bottom: 23px;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29px;
+      font-family: $text-content-font-family;
+      padding-bottom: 51px;
+
+      @media screen and (max-width: $desktop-max) {
+        font-size: 25px;
+      }
+
+      &--padding {
+        padding-right: 61px;
+
+        @media screen and (max-width: $desktop-max) {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    padding-top: 76px;
+
+    @media screen and (max-width: $desktop-max) {
+      padding-bottom: 15px;
+    }
+
+    &-address {
+      font-size: 15px;
+      line-height: 18.43px;
+      font-weight: 400;
+      font-family: $text-content-font-family;
+      color: $color-location;
+      font-style: italic;
+      padding-left: 6px;
+    }
+  }
+}

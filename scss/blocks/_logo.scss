@@ -1,0 +1,8 @@
+.nav {
+  &__logo {
+    &:hover,
+    &:focus {
+      border: 2px solid slateblue;
+    }
+  }
+}

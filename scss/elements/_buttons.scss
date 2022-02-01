@@ -1,0 +1,210 @@
+.btn {
+  font-family: $body-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: $color-location;
+  padding: 16px 40px 14px 39px;
+  border: 1px solid $color-default;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-header;
+    background-color: $color-default;
+    transition: all 1s ease 0s;
+  }
+
+  &:focus {
+    background-color: rgba(44, 69, 187, 0.94);
+    transition: all 0.5s ease 0s;
+  }
+}
+
+.nav__dots-active {
+  background-color: $color-header;
+}
+
+.banner {
+
+  &__nav-dots {
+    display: inline-block;
+    margin-right: 13px;
+    border: 0.125vh solid white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 34px;
+    margin-top: 3px;
+  }
+}
+
+.dots-active {
+  background-color: $color-header;
+}
+
+.menu {
+
+  &__nav-dots {
+    display: inline-block;
+    margin-right: 0.8vw;
+    border: 0.125vh solid $color-header;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+
+    &:hover {
+      background-color: $color-header;
+    }
+
+    @media screen and (max-width: $desktop-max) {
+      display: none;
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 143px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style-type: none;
+
+  li {
+    margin: 0 20px;
+  }
+
+  button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid $color-header;
+    border-radius: 100%;
+    background-color: transparent;
+    text-indent: -9999px;
+    cursor: pointer;
+
+  }
+
+  li.slick-active button {
+    background-color: $color-header;
+  }
+}
+
+.prev__arrow {
+  width: 44px;
+  height: 44px;
+  border: 2px solid $color-header;
+  border-radius: 50%;
+  position: absolute;
+  top: 32%;
+  left: -104px;
+  z-index: 1;
+  font-size: 14px;
+  cursor: pointer;
+
+
+  @media screen and (max-width: $tablet-max) {
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 100%;
+    z-index: 1;
+    left: 31px;
+    top: 29%;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease 0s;
+  }
+}
+
+.gallery {
+
+  &__button {
+    text-align: center;
+    margin-top: 72px;
+  }
+
+  &__btn {
+    padding: 16px 56px 14px 56px;
+    text-align: center;
+    margin-top: 72px;
+  }
+}
+
+.next__arrow {
+  width: 44px;
+  height: 44px;
+  border: 2px solid $color-header;
+  border-radius: 50%;
+  position: absolute;
+  top: 32%;
+  right: -104px;
+  z-index: 1;
+  font-size: 14px;
+  cursor: pointer;
+
+  @media screen and (max-width: $tablet-max) {
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 100%;
+    z-index: 1;
+    right: 31px;
+    top: 29%;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.62);
+    transition: all 0.5s ease 0s;
+  }
+
+  &:focus {
+    background-color: rgba(44, 69, 187, 0.94);
+    transition: all 0.5s ease 0s;
+  }
+}
+
+.fa-angle-left {
+  color: $color-header;
+  padding: 15px 17px 10px;
+}
+
+.fa-angle-right {
+  color: $color-header;
+  padding: 15px 17px 10px;
+}
+
+.form {
+
+  &__submit {
+    font-size: 17px;
+    line-height: 27px;
+    color: $color-location;
+    padding: 12px 35px 10px 34px;
+    background-color: $color-header;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(143, 136, 236, 0.62);
+      transition: all 1s ease 0s;
+    }
+
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.62);
+      color: $color-header;
+      transition: all 1s ease 0s;
+    }
+  }
+}
+
